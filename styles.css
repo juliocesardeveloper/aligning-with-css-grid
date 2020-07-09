@@ -1,0 +1,60 @@
+:root {
+  --color1: #f79ad3;
+  --color2: #c86fc9;
+  --color3: #d7c0d0;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, 180px);
+  grid-template-rows: repeat(3, 180px);
+  grid-gap: 20px;
+  place-content: center;
+}
+.contenedor {
+  background-color: #8e518d;
+  width: 180px;
+  height: 180px;
+  display: grid;
+  padding: 5px;
+}
+.item {
+  background-color: papayawhip;
+  width: 60px;
+  height: 60px;
+}
+.item1 {
+  background-color: var(--color1);
+}
+.item2 {
+  background-color: var(--color1);
+  place-self: start center;
+}
+.item3 {
+  background-color: var(--color1);
+  place-self: start end;
+}
+.item4 {
+  background-color: var(--color2);
+  place-self: center start;
+}
+.item5 {
+  background-color: var(--color2);
+  place-self: center;
+}
+.item6 {
+  background-color: var(--color2);
+  place-self: center end;
+}
+.item7 {
+  background-color: var(--color3);
+  place-self: end start;
+}
+.item8 {
+  background-color: var(--color3);
+  place-self: end center;
+}
+.item9 {
+  background-color: var(--color3);
+  place-self: end;
+}
